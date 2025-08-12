@@ -32,7 +32,11 @@ cd <YOUR_PROJECT_NAME>
 # Step 3: Install the necessary dependencies.
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Set up environment variables for Supabase
+cp .env.example .env
+# Edit .env with your Supabase project credentials
+
+# Step 5: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
@@ -55,10 +59,21 @@ npm run dev
 This project is built with:
 
 - Vite
-- TypeScript
+- TypeScript  
 - React
 - shadcn-ui
 - Tailwind CSS
+- Supabase (Authentication & Database)
+
+## Authentication System
+
+This project includes a complete authentication system with:
+- User registration and login
+- Profile management
+- Admin-only project CRUD operations
+- Role-based access control
+
+See `AUTHENTICATION_SETUP.md` for detailed setup instructions.
 
 ## How can I deploy this project?
 
